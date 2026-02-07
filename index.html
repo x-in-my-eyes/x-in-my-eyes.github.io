@@ -1,0 +1,136 @@
+# x-in-my-eyes.github.io
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Simples | x-in-my-eyes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div>
+          <p class="eyebrow">x-in-my-eyes</p>
+          <h1>Um site base simples e funcional</h1>
+          <p class="subtitle">
+            Estrutura pronta para começar projetos rápidos: hero, recursos, cards e
+            formulário de contato.
+          </p>
+        </div>
+        <button class="btn btn-outline" type="button" id="theme-toggle">
+          Alternar tema
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h2>Construa com velocidade</h2>
+            <p>
+              Use esta base para organizar conteúdo, apresentar diferenciais e ter
+              interações simples com JavaScript.
+            </p>
+            <div class="hero-actions">
+              <button class="btn" type="button" id="primary-cta">Quero começar</button>
+              <button class="btn btn-ghost" type="button" id="secondary-cta">
+                Ver checklist
+              </button>
+            </div>
+            <p class="feedback" id="cta-feedback" aria-live="polite"></p>
+          </div>
+          <div class="hero-card">
+            <h3>Checklist rápido</h3>
+            <ul id="checklist" class="checklist" aria-hidden="true">
+              <li>Defina a proposta em 1 frase.</li>
+              <li>Liste os principais recursos.</li>
+              <li>Adicione um CTA claro.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2>Recursos essenciais</h2>
+          <div class="feature-grid">
+            <article class="card">
+              <h3>Layout responsivo</h3>
+              <p>
+                Grade flexível com espaçamentos consistentes para funcionar bem em
+                celular e desktop.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Tipografia legível</h3>
+              <p>
+                Hierarquia clara entre títulos, textos e destaques para leitura
+                confortável.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Interação leve</h3>
+              <p>
+                Pequenas interações com JavaScript para dar vida sem depender de
+                bibliotecas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Fale com a gente</h2>
+            <p>
+              Preencha os campos e receba um resumo com próximos passos para dar
+              continuidade ao projeto.
+            </p>
+            <ul class="contact-info">
+              <li>Tempo médio de resposta: 24h</li>
+              <li>Canal principal: email</li>
+              <li>Atendimento de segunda a sexta</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label>
+              Nome
+              <input type="text" name="name" placeholder="Seu nome" required />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="voce@email.com"
+                required
+              />
+            </label>
+            <label>
+              Objetivo
+              <select name="goal" required>
+                <option value="">Selecione</option>
+                <option value="landing">Landing page</option>
+                <option value="portfolio">Portfólio</option>
+                <option value="blog">Blog</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Enviar</button>
+            <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="current-year"></span> x-in-my-eyes. Todos os direitos reservados.</p>
+        <a href="#" class="footer-link">Voltar ao topo</a>
+      </div>
+    </footer>
+  </body>
+</html>
